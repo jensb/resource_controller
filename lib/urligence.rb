@@ -26,11 +26,11 @@ module ResourceController
         if obj.is_a? Symbol
           obj
         elsif obj.is_a? Array
-          obj.first
+          obj.select {|s| s.is_a?(Symbol) }
         else
           obj.class.name.underscore.to_sym
         end
-      end
+      end.flatten
 
       unless config[:type] == :hash
         send url_fragments.join("_"), *objects.flatten.select { |obj| !obj.is_a? Symbol }
