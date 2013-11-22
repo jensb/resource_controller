@@ -6,9 +6,9 @@ resource_controller makes RESTful controllers easier, more maintainable, and sup
 
 - makandra's fork is not maintained, and they're not accepting pull requests. Thus this fork.
 - This fork adds 
- - more than two nesting levels of URLs (belongs_to), also for polymorphic URLs
- - Rails 3 compatibility to the currently unmaintained {resource_controller}[http://github.com/jamesgolick/resource_controller]. You should use the original resource_controller for Rails 2 applications.
- - otherwise, *no* new features.
+  - more than two nesting levels of URLs (belongs_to), also for polymorphic URLs
+  - Rails 3 compatibility to the currently unmaintained {resource_controller}[http://github.com/jamesgolick/resource_controller]. You should use the original resource_controller for Rails 2 applications.
+  - otherwise, *no* new features.
 
 I will accept pull requests for bugfixes only.
 
